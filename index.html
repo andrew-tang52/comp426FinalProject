@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/Users/Andrew/Desktop/Comp426/comp426FinalProject/firebasestyle.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h2>Firebase Web login</h2>
+    <h3>Login or Signup to play Reversi</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <button onclick="signup()">Signup</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login. You're currently logged in.</p>
+    <form id = "form">
+        <input type = "submit" value="Generate Avatar">
+    </form>
+    <img alt="" id="img">
+
+    <button onclick="makeAvatar()">Refresh for new Avatar</button>
+    
+    <button><a href="reversi.html">Go to Reversi</a></button>
+    
+    <button onclick="logout()">Logout</button>
+
+    <button onclick="generateJoke()" id="get_joke" class="btn">Click here for a laugh</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+  <script>
+    // Initialize Firebase
+    
+
+    var config = {
+        apiKey: "AIzaSyDj3YKjQsu62Q0jYtWgPZkln6UL1DFI2hg",
+        authDomain: "comp426-firebase-login.firebaseapp.com",
+        projectId: "comp426-firebase-login",
+        storageBucket: "comp426-firebase-login.appspot.com",
+        messagingSenderId: "173431624616",
+        appId: "1:173431624616:web:c14c798dbfed045041839d"
+    };
+    firebase.initializeApp(config);
+
+        const auth = firebase.auth();
+  </script>
+  <script src="/Users/Andrew/Desktop/Comp426/comp426FinalProject/firebasejase.js"></script>
+
+</body>
+</html>
