@@ -52,11 +52,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   function logout(){
     firebase.auth().signOut();
   }
-
-
-  function makeAvatar(){
-    location.reload();
-  }
   
   var form = document.getElementById("form")
 
@@ -71,6 +66,10 @@ firebase.auth().onAuthStateChanged(function(user) {
       image.src = url;
       
   })
+
+  function makeAvatar(){
+    location.reload();
+  }
 
   async function generateJoke(){
       //call api
