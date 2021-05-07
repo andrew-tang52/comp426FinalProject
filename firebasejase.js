@@ -64,7 +64,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       
       event.preventDefault()
 
-      var url = 'https://picsum.photos/285/100'
+      var url = "https://picsum.photos/285/100"
 
       var image = document.getElementById('img')
 
@@ -74,7 +74,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
   async function generateJoke(){
       //call api
-      const response = await fetch('https://icanhazdadjoke.com/', {
+      const response = await fetch("https://icanhazdadjoke.com/", {
           headers: {
               'Accept' : 'application/json'
           }
