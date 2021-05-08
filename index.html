@@ -1,12 +1,12 @@
 <html>
 <head>
-  <title>Firebase Login</title>
+  <title>Home</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="firebasestyle.css" >
+  <link rel="stylesheet" href="testing.css" >
 </head>
 <body>
 
-  <div id="login_div" class="main-div">
+  <!-- <div id="login_div" class="main-div">
     <h2>Firebase Web login</h2>
     <h3>Login or Signup to play Reversi</h3>
     <input type="email" placeholder="Email..." id="email_field" />
@@ -14,32 +14,33 @@
 
     <button onclick="login()">Login to Account</button>
     <button onclick="signup()">Signup</button>
-  </div>
+  </div> -->
 
-  
-
-  <div id="user_div" class="loggedin-div">
+  <div id="login_div" class="main-div">
     <h3>Welcome User</h3>
     <p id="user_para">Welcome to Firebase web login. You're currently logged in.</p>
     <form id = "form">
-      <button onclick="createAvatar()">Create Avatar</button>
+      <button class="btn" onclick="createAvatar()">Create Avatar</button>
     </form>
     <img alt="" id="img">
+    <label> .</label>
 
    
 
-    <button onclick="refreshAvatar()">Refresh for new Avatar</button>
-    
-    <button><a href="reversi.html">Go to Reversi</a></button>
-    
-    <button onclick="logout()">Logout</button>
+    <button class="btn" onclick="refreshAvatar()">Refresh for new Avatar</button>
 
-    <button onclick="generateJoke()">Click here for a laugh</button>
+    <label> .</label>
+    
+    <button class="btn"><a href="reversi.html">Go to Reversi</a></button>
+    <label> .</label>
+    
+    <button class="btn" onclick="logout()">Logout</button>
+    <label> .</label>
+
+    <button class="btn" onclick="generateJoke()">Click here for a laugh</button>
   </div>
 
-
-
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
   <script>
     // Initialize Firebase
@@ -56,8 +57,8 @@
     firebase.initializeApp(config);
 
         const auth = firebase.auth();
-  </script>
-  <script src="firebasejase.js"></script>
+  </script> -->
+  <script src="testjs2.js"></script>
 
 </body>
 </html>
