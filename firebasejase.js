@@ -1,3 +1,4 @@
+
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
@@ -52,8 +53,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   function logout(){
     firebase.auth().signOut();
   }
-  
-  var form = document.getElementById("form")
+
+  function createAvatar(){
+    var form = document.getElementById("form")
 
   form.addEventListener("submit", function(event){
       
@@ -66,8 +68,9 @@ firebase.auth().onAuthStateChanged(function(user) {
       image.src = url;
       
   })
+  }
 
-  function makeAvatar(){
+  function refreshAvatar(){
     location.reload();
   }
 
